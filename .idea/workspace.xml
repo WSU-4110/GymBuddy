@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcdd8581-be46-41e3-801d-97eb78e74e99" name="Default Changelist" comment="" />
+    <list default="true" id="dcdd8581-be46-41e3-801d-97eb78e74e99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +28,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,5 +44,15 @@
       <updated>1613067998696</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="378" key="#Project_Structure" timestamp="1613355675567">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="872" y="378" key="#Project_Structure/0.0.2560.1440/2560.360.1920.1080@0.0.2560.1440" timestamp="1613355675567" />
+    <state x="976" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1613355581676">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="976" y="544" key="com.intellij.ide.util.TipDialog/0.0.2560.1440/2560.360.1920.1080@0.0.2560.1440" timestamp="1613355581676" />
   </component>
 </project>
