@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dcdd8581-be46-41e3-801d-97eb78e74e99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +28,17 @@
   <component name="ProjectId" id="1oLZnagFsu5b8Q7aFg6aSgX5Tix" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -45,11 +52,27 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="872" y="378" key="#Project_Structure" timestamp="1613355675567">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="872" y="378" key="#Project_Structure/0.0.2560.1440/2560.360.1920.1080@0.0.2560.1440" timestamp="1613355675567" />
+    <state x="114" y="23" key="SettingsEditor" timestamp="1613360140361">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="114" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1613360140361" />
     <state x="976" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1613355581676">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
