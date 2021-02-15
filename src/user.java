@@ -1,4 +1,5 @@
 public class user {
+
     public String firstName = "", lastName ="";
     //public int age;
     public String phoneNumber; //most convenient data type IMO if you're wondering
@@ -82,35 +83,77 @@ SET FUNCTIONS FOR ALL THE NOT COMMENTED FIELDS
 
  */
 protected void setFirstName(String firstName){
-    this.firstName = firstName;
+    if(firstName != null && firstName.length() >= 2) {
+        this.firstName = firstName;
+    }
+    else{
+        return;
+    }
 }
 
 protected void setLastName(String lastName){
-    this.lastName = lastName;
+    if (lastName != null && lastName.length() >=2){
+        this.lastName = lastName;
+    }
+    else{
+        return;
+    }
+
 }
 
 protected void setPhoneNumber(String phoneNumber){
-    this.phoneNumber = phoneNumber;
+    if (phoneNumber.matches("\\d{9}")){
+        this.phoneNumber = phoneNumber;
+    }
+    else if (phoneNumber.matches("\\d{3}[-\\s]\\d{3}[-\\s]\\d{4}"))
+    {
+        this.phoneNumber = phoneNumber;
+    }
+    else
+    {
+        return;
+    }
 }
 
 protected void setEmail(String email){
+
     this.email = email;
 }
 
 protected void setGender(String gender){
-    this.gender = gender;
+    if (gender == "male" || gender == "female") {
+        this.gender = gender;
+    }
+    else{
+        return;
+    }
 }
 
 protected void setBirthdayYear(int birthdayYear){
-    this.birthdayYear = birthdayYear;
+    if (birthdayYear >= 1920 || birthdayYear <= 2004 ) {
+        this.birthdayYear = birthdayYear;
+    }
+    else {
+        return;
+    }
 }
 
 protected void setBirthdayMonth(int birthdayMonth){
-    this.birthdayMonth = birthdayMonth;
+    if (birthdayMonth > 0 || birthdayMonth <= 12) {
+        this.birthdayMonth = birthdayMonth;
+    }
+    else{
+        return;
+    }
 }
 
 protected void setBirthdayDay(int birthdayDay){
-    this.birthdayDay = birthdayDay;
+    if (birthdayDay > 0 || birthdayDay <= 31) {
+        this.birthdayDay = birthdayDay;
+    }
+    else {
+        return;
+    }
 }
 /*
 GET FUNCTIONS FOR ALL THE NOT COMMENTED FIELDS
