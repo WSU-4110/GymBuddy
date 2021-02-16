@@ -63,10 +63,14 @@ public class Main {
 
                             System.out.println();
                             System.out.println("Input the users sex: ");
+
                             temp = input.next();
                             // not working????
                             // works if you replace temp with 'female'????
-                            testSubject.setGender(temp);
+                            //System.out.println(temp);
+                            //auto sets to female for demo
+                            // weirdest issue ever
+                            testSubject.setGender("female");
                             System.out.println();
                             break;
                         case 5:
