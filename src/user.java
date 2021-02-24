@@ -210,8 +210,7 @@ public void updateInfo(String firstName, String lastName, String phoneNumber, St
     this.setBirthdayDay(birthdayDay);
 }
 
-public void demoUser(){
-   this.updateInfo("kevin", "clause", "810-253-5757", "go8212@wayne.edu", "male", 2000, 9, 02);
+public void demoUser(){ updateInfo("kevin", "clause", "810-253-5757", "go8212@wayne.edu", "male", 2000, 9, 02);
 }
 
 // * * * * * *  * * *  * * *  * * *  End of Kevin's work space * * * * * *  * * *  * * *  * * *  * * *
