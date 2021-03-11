@@ -9,21 +9,24 @@ public class GymBuddy {
 
    public static void main(String[] args) {
        while(true) {
-           
+    // print menu       
        System.out.println(
                "\nWelcome to Gym Buddy Application\n------------------------------------------------\nSelect one option: \n");
        System.out.println("1. Add new user\n2. Find gym partner\n3. Exit");
-
+  // get user input
        int option = scan.nextInt();
-
+ // switch user input
        switch (option) {
        case 1:
+    // call add user
            addUser();
            break;
        case 2:
+   // call find partner
            findPartner();
            break;
        case 3:
+    // exit execution
            System.exit(0);
            break;
        default:
@@ -34,17 +37,19 @@ public class GymBuddy {
    }
 
    private static void findPartner() {
-       
+   // get name of user need partner    
        System.out.print("Enter user name : ");
+   // get user input
        String name = scan.next();
        int matchCount = 0;
-       
+     // check if list is not empty  
        if (gymUserList.size() != 0) {
-           
+     / loop through list      
            for (Gym g : gymUserList) {
-               
+       // if a user with the given name found
+                 
                if (g.getUserName().equals(name)) {
-                   
+      // loop through the list and check how many parameters matches              
                    for (Gym gym : gymUserList) {
                        if(!gym.getUserName().equals(name)) {
                        if (g.getLocation().equals(gym.getLocation()))
@@ -79,7 +84,7 @@ public class GymBuddy {
    }
 
    private static void addUser() {
-
+// ask user for input details
        System.out.print("Enter user name : ");
        String name = scan.next();
        System.out.print("Enter location : ");
@@ -94,7 +99,7 @@ public class GymBuddy {
        String gymName = scan.next();
        System.out.print("Is disciplined ? (true/false) : ");
        boolean discipline = scan.nextBoolean();
-
+// create a gym object and add to gymUser list
        gymUserList.add(new Gym(name, location, routine, age, availability, gymName, discipline));
 
    }
