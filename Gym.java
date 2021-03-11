@@ -1,5 +1,7 @@
 public class Gym {
 
+// instance variables
+
    private String userName;
    private String location;
    private String routine;
@@ -7,7 +9,7 @@ public class Gym {
    private boolean availability;
    private String gymName;
    private boolean discipline;
-
+//class constructor 
  public Gym(String userName, String location, String routine, int age, boolean availability, String gymName,
            boolean discipline) {
        this.location = location;
@@ -19,12 +21,13 @@ public class Gym {
        this.userName = userName;
    }
 
+  //return location of gym
    
    public String getLocation() {
        return location;
    }
 
-   
+  //return routine  
    public String getRoutine() {
        return routine;
    }
@@ -32,55 +35,64 @@ public class Gym {
    public int getAge() {
        return age;
    }
-
+ // return availability 
+ 
    public boolean isAvailability() {
        return availability;
    }
-
+ // return gym name
+ 
    public String getGymName() {
        return gymName;
    }
 
-  
+ //return discipline
+   
    public boolean isDiscipline() {
        return discipline;
    }
 
+ //param location
  
    public void setLocation(String location) {
        this.location = location;
    }
 
-   
+ //param routine
+ 
    public void setRoutine(String routine) {
        this.routine = routine;
    }
 
+// param age
   
    public void setAge(int age) {
        this.age = age;
    }
 
+ // param availability
    
    public void setAvailability(boolean availability) {
        this.availability = availability;
    }
-
+ // param gymName
   
    public void setGymName(String gymName) {
        this.gymName = gymName;
    }
 
+   // param discipline 
    
    public void setDiscipline(boolean discipline) {
        this.discipline = discipline;
    }
 
-  
+  // return user name
    public String getUserName() {
        return userName;
    }
 
+  // param userName
   
    public void setUserName(String userName) {
        this.userName = userName;
