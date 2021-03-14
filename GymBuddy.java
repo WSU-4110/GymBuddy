@@ -1,107 +1,84 @@
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GymBuddy {
-   static Scanner scan = new Scanner(System.in);
-   static ArrayList<Gym> gymUserList = new ArrayList<>();
 
-   public static void main(String[] args) {
-       while(true) {
-    // print menu       
-       System.out.println(
-               "\nWelcome to Gym Buddy Application\n------------------------------------------------\nSelect one option: \n");
-       System.out.println("1. Add new user\n2. Find gym partner\n3. Exit");
-  // get user input
-       int option = scan.nextInt();
- // switch user input
-       switch (option) {
-       case 1:
-    // call add user
-           addUser();
-           break;
-       case 2:
-   // call find partner
-           findPartner();
-           break;
-       case 3:
-    // exit execution
-           System.exit(0);
-           break;
-       default:
-           System.out.println("Enter a valid option number.");
-           break;
-       }
-       }
-   }
+        public static void main(String[] args) {
+                
+                Scanner sc = new Scanner(System.in);
+                
+                ArrayList<User> members = new ArrayList<>();
+                
+                while(true) {
+                        
+                        System.out.println("Welcome to Gym Buddy Application");
+                        System.out.println("-------------------------------------------------------");
+                        System.out.println("Select one option : \n");
+                        System.out.println("1. Add new user\n2. Find gym partner\n3. Exit");
+                        int option = sc.nextInt();
+                        
+                        if(option == 1) {
+                                System.out.print("Enter user name : ");
+                                String uname = sc.next();
+                                System.out.print("Enter location : ");
+                                String location = sc.next();
+                                System.out.print("Enter routine : ");
+                                String routine = sc.next();
+                                System.out.print("Enter age : ");
+                                int age = sc.nextInt();
+                                System.out.print("Is available ? (true/false) : ");
+                                boolean available = sc.nextBoolean();
+                                System.out.print("Enter gym name : ");
+                                String gymName = sc.next();
+                                System.out.print("Is disciplined ? (true/false) : ");
+                                boolean discipline = sc.nextBoolean();
+                                members.add(new User(uname, location, routine, age, available, gymName, discipline));
+                        } else if(option == 2) {
+                                System.out.print("Enter user name : ");
+                                String uname = sc.next();
+                                for(User user : members) {
+                                        if(user.userName.equals(uname)) {
+                                                System.out.println("Match found : " + user);
+                                        } else {
+                                                System.out.println("Match not found");
+                                        }
+                                }
+                        } else if(option == 3) {
+                                break;
+                        }
+                        System.out.println();
+                }               
+                
+                
+                
+                sc.close();
+                
+        }
 
-   private static void findPartner() {
-   // get name of user need partner    
-       System.out.print("Enter user name : ");
-   // get user input
-       String name = scan.next();
-       int matchCount = 0;
-     // check if list is not empty  
-       if (gymUserList.size() != 0) {
-     / loop through list      
-           for (Gym g : gymUserList) {
-       // if a user with the given name found
-                 
-               if (g.getUserName().equals(name)) {
-      // loop through the list and check how many parameters matches              
-                   for (Gym gym : gymUserList) {
-                       if(!gym.getUserName().equals(name)) {
-                       if (g.getLocation().equals(gym.getLocation()))
-                           matchCount++;
-                       if (g.getRoutine().equals(gym.getRoutine()))
-                           matchCount++;
-                       if (g.getAge() / 10 - 1 > gym.getAge() && g.getAge() / 10 + 1 < gym.getAge())
-                           matchCount++;
-                       if (g.isAvailability() == gym.isAvailability())
-                           matchCount++;
-                       if (g.getGymName().equals(gym.getGymName()))
-                           matchCount++;
-                       if (g.isDiscipline() == gym.isDiscipline())
-                           matchCount++;
+}
 
-                       // check if at least 4 parameter matches
-                       if (matchCount >= 4) {
-                           System.out.println("Match found : " + gym);
-                           break;
-                       }
-                       }
-                   }
-                   break;
-               }
-           }
-       } else {
-           System.out.println("No users in the list");
-       }
-       if(matchCount <4) {
-           System.out.println("No match found! Please wait...");
-       }
-   }
-
-   private static void addUser() {
-// ask user for input details
-       System.out.print("Enter user name : ");
-       String name = scan.next();
-       System.out.print("Enter location : ");
-       String location = scan.next();
-       System.out.print("Enter routine : ");
-       String routine = scan.next();
-       System.out.print("Enter age : ");
-       int age = scan.nextInt();
-       System.out.print("Is available ? (true/false) : ");
-       boolean availability = scan.nextBoolean();
-       System.out.print("Enter gym name : ");
-       String gymName = scan.next();
-       System.out.print("Is disciplined ? (true/false) : ");
-       boolean discipline = scan.nextBoolean();
-// create a gym object and add to gymUser list
-       gymUserList.add(new Gym(name, location, routine, age, availability, gymName, discipline));
-
-   }
-
+class User  {
+        public String userName; 
+        public String location;
+        public String routine;
+        public int age;
+        public boolean availability;
+        public String gymName;
+        public boolean discipline;
+        public User(String userName, String location, String routine, int age, boolean availability, String gymName,
+                        boolean discipline) {
+                super();
+                this.userName = userName;
+                this.location = location;
+                this.routine = routine;
+                this.age = age;
+                this.availability = availability;
+                this.gymName = gymName;
+                this.discipline = discipline;
+        }
+        @Override
+        public String toString() {
+                return "Gym [userName=" + userName + ", location=" + location + ", routine=" + routine + ", age=" + age
+                                + ", availability=" + availability + ", gymName=" + gymName + ", discipline=" + discipline + "]";
+        }
 }
