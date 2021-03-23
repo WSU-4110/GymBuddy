@@ -104,6 +104,22 @@ public class Gym {
                + ", availability=" + availability + ", gymName=" + gymName + ", discipline=" + discipline + "]";
    }
 
+/*
+MAHER
+
+Allows the user to swipe right or left on another user's profile
+ */
+   public boolean Swiping(Gym user){
+       System.out.print("Do you want to be friends with "+ user.userName + "?: ");
+       Scanner sc = new Scanner(System.in);
+       boolean choice = sc.nextBoolean();
+       if (choice == true) {
+           System.out.println("You swiped right on: "+ user.userName+".");
+       } else if (choice == false) {
+           System.out.println("You swiped left on: " + user.userName+".");
+       }
+       sc.close(); //close sanner object
+   }
 }
 
 
