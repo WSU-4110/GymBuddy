@@ -34,6 +34,7 @@ public class Main {
                     if (database.login.connect(name, password) == true) {// if user info matches, it will log the user in, and show who the active user is
                         System.out.println(name + " Logged in successfully");
                         loggedIn = true;
+                        database.login.getLogin();
                     } else {
                         System.out.println("Login failed");
                     }

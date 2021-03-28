@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 public class login { //user enters their login info, and if it matches user data in the database, it returns true for a successful login, or false for a failed login
+   private static login loginConnection = null;
     public static boolean connect(String name, String password){
         String line = "";
         try{
@@ -25,5 +26,11 @@ public class login { //user enters their login info, and if it matches user data
         }
         return false;
     }
-
+public static login getLogin(){
+        if (loginConnection == null){
+            loginConnection = new login();
+            System.out.println(loginConnection);
+        }
+        return loginConnection;
+}
 }
