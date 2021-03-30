@@ -1,25 +1,26 @@
-public class user {
+public interface user {
 
-    public String firstName = "", lastName ="";
-    //public int age;
-    public String phoneNumber; //most convenient data type IMO if you're wondering
-    public String email = "";
-    public String gender = "";
-    public int birthdayYear, birthdayMonth, birthdayDay;
+    void workoutRoutine();
+    void userInfo();
+}
 
-    //default constructor
-    protected user(){
-        firstName ="NA";
-        lastName = "NA";
-        phoneNumber = "000-000-0000";
-        email = "example@gmail.com";
-        gender = "Male";
-        birthdayYear = 0000;
-        birthdayMonth =00;
-        birthdayDay= 00;
-    }
 
-    protected user(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
+public class runner implements user {
+
+    String doesCompete;
+    String inOrOut;
+    String distanceOrSprint;
+    float distance;
+
+
+    public String firstName ="NA", lastName = "NA";
+    public String  phoneNumber = "000-000-0000"; //most convenient data type IMO if you're wondering
+    public String email = "example@gmail.com";
+    public String gender = "Male";
+    public int birthdayYear = 0000, birthdayMonth =00, birthdayDay= 00;
+    
+
+    public void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
                    String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay){
         this.firstName = userFirstName;
         this.lastName = userLastName;
@@ -29,227 +30,136 @@ public class user {
         this.birthdayYear = userBirthdayYear;
         this.birthdayMonth = userBirthdayMonth;
         this.birthdayDay = userBirthdayDay;
-
-        // * * *  * * *  * * *  * * *  * * *  * * *  * * *  * * *  * * *
-        // shouldn't these all have a 'this.' to refer to this obj? -kevin
-        // * * *  * * *  * * *  * * *  * * *  * * *  * * *  * * *  * * *
+    }
+    
+    public void workoutRoutine(){
+        System.out.println("I am ready to compete? " + doesCompete);
+        System.out.println("Do I prefer to run indoors or outdoors? " + inOrOut);
+        System.out.println("Do I run distance or sprints" + distanceOrSprint);
+        System.out.println("How far do I run " + distance);
     }
 
-
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//              Un-used functions
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-/*    May need later
-public String location = "";
-public String gym = "";
-public String discipline = "";
-public String availability = "";
-public String objectives = "";
-public String routine = "";
-
-public void setLocation(String local){
-    this.location = local;
-}
-
-public void setGym(String gym){
-    this.gym = gym;
-}
-
-public void setDiscipline(String discipline){
-    this.discipline = discipline;
-}
-
-public void setAvailabilty(String avalable){
-    this.Availabilty = avalable;
-}
-public void setGoals(String goals){
-    this.goals = goals;
-}
-
-public void setRoutine(String routine){
-    this.routine = routine;
-}
-
-*/
-
-
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//              End of Un-used functions
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-/*
-SET FUNCTIONS FOR ALL THE NOT COMMENTED FIELDS
-
- */
-protected void setFirstName(String firstName){
-    if(firstName != null && firstName.length() >= 2) {
-        this.firstName = firstName;
+    runner(){
+        inOrOut = "";
+        doesCompete = "";
+        distance = 0;
+        distanceOrSprint = "";
     }
-    else{
-        return;
+
+    runner(String inOrOut, String doesCompete, String distanceOrSprint, float distance){
+        this.doesCompete = doesCompete;
+        this.inOrOut = inOrOut;
+        this.distanceOrSprint = distanceOrSprint;
+        this.distance = distance;
+        
     }
 }
 
-protected void setLastName(String lastName){
-    if (lastName != null && lastName.length() >=2){
-        this.lastName = lastName;
+public class powerlifter implements user {
+    String doesCompete;
+    int maxDeadlift;
+    int maxSquat;
+    int maxBench;
+    String Natty;
+    String thousandPoundClub;
+
+    public String firstName ="NA", lastName = "NA";
+    public String  phoneNumber = "000-000-0000"; //most convenient data type IMO if you're wondering
+    public String email = "example@gmail.com";
+    public String gender = "Male";
+    public int birthdayYear = 0000, birthdayMonth =00, birthdayDay= 00;
+
+
+    void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
+                  String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay){
+        this.firstName = userFirstName;
+        this.lastName = userLastName;
+        this.phoneNumber = userPhoneNumber;
+        this.email = userEmail;
+        this.gender = userGender;
+        this.birthdayYear = userBirthdayYear;
+        this.birthdayMonth = userBirthdayMonth;
+        this.birthdayDay = userBirthdayDay;
     }
-    else{
-        return;
-    }
-
-}
-
-protected void setPhoneNumber(String phoneNumber){
-    if (phoneNumber.matches("\\d{9}")){
-        this.phoneNumber = phoneNumber;
-    }
-    else if (phoneNumber.matches("\\d{3}[-\\s]\\d{3}[-\\s]\\d{4}"))
-    {
-        this.phoneNumber = phoneNumber;
-    }
-    else
-    {
-        return;
-    }
-}
-
-protected void setEmail(String email){
-
-    this.email = email;
-}
-
-protected void setGender(String gender){
-    if (gender == "male" || gender == "female") {
-        this.gender = gender;
-    }
-    else{
-        return;
-    }
-}
-
-protected void setBirthdayYear(int birthdayYear){
-    if (birthdayYear >= 1920 || birthdayYear <= 2004 ) {
-        this.birthdayYear = birthdayYear;
-    }
-    else {
-        return;
-    }
-}
-
-protected void setBirthdayMonth(int birthdayMonth){
-    if (birthdayMonth > 0 || birthdayMonth <= 12) {
-        this.birthdayMonth = birthdayMonth;
-    }
-    else{
-        return;
-    }
-}
-
-protected void setBirthdayDay(int birthdayDay){
-    if (birthdayDay > 0 || birthdayDay <= 31) {
-        this.birthdayDay = birthdayDay;
-    }
-    else {
-        return;
-    }
-}
-/*
-GET FUNCTIONS FOR ALL THE NOT COMMENTED FIELDS
-
-
- */
-public String getFirstName(){
-    return firstName;
-}
-
-public String getLastName(){
-    return lastName;
-}
-
-public String getPhoneNumber(){
-    return phoneNumber;
-}
-public String getEmail(){
-    return email;
-}
-public String getGender(){
-    return gender;
-}
-public int getBirthdayYear(){
-    return birthdayYear;
-}
-public int getBirthdayMonth(){
-    return birthdayMonth;
-}
-public int getBirthdayDay(){
-    return birthdayDay;
-}
-//METHOD TO DISPLAY THE USER INFORMATION WHICH WILL CALL ALL THE GETS FUNCTION
-
-// * * * * * *  * * *  * * *  * *  Kevin's work space * * * * * *  * * *  * * *  * * *  * * *  * * *
-
-public void infoDump(){
-    System.out.println("Name :" + this.firstName + " " + this.lastName);
-    System.out.println("Sex: " + this.gender);
-    System.out.println("Date of Birth: " + this.birthdayDay + "/" + this.birthdayMonth + "/" + this.birthdayYear);
-    System.out.println("Phone number: " + this.phoneNumber);
-    System.out.println("Email :" + this.email);
-}
-
-public void updateInfo(String firstName, String lastName, String phoneNumber, String email, String gender,
-                       int birthdayYear, int birthdayMonth, int birthdayDay){
-    this.setFirstName(firstName);
-    this.setLastName(lastName);
-    this.setPhoneNumber(phoneNumber);
-    this.setGender(gender);
-    this.setEmail(email);
-    this.setBirthdayYear(birthdayYear);
-    this.setBirthdayMonth(birthdayMonth);
-    this.setBirthdayDay(birthdayDay);
-}
-
-public void demoUser(){ updateInfo("kevin", "clause", "810-253-5757", "go8212@wayne.edu", "male", 2000, 9, 02);
-}
-
-// * * * * * *  * * *  * * *  * * *  End of Kevin's work space * * * * * *  * * *  * * *  * * *  * * *
-
-public void displayUser(user profile){
-    profile.getFirstName();
-    profile.getLastName();
-    profile.getPhoneNumber();
-    profile.getEmail();
-    profile.getGender();
-    profile.getBirthdayYear();
-    profile.getBirthdayMonth();
-    profile.getBirthdayDay();
-}
-
-
-//METHOD TO DELETE THE USER'S PROFILE (OBJECT)
-
-    public void removeUser(user profile){
-    profile = new user();
-    profile = null;
+    
+    public void workoutRoutine(){
+        System.out.println("I am ready to compete? " + doesCompete);
+        System.out.println("Am I using Anabolics? " + Natty);
+        System.out.println("My max bench is: " + maxBench);
+        System.out.println("My max squat is: " + maxSquat);
+        System.out.println("My max deadlift is: " + maxDeadlift);
+        System.out.println("Is this user in the 1000 pound club?" + thousandPoundClub);
     }
 
-    //METHOD CALLED "MODIFY PROFILE" WHICH WILL CALL ALL THE SETS FUNCTIONS
+    powerlifter(){
+        thousandPoundClub = "";
+        doesCompete = "";
+        Natty = "";
+        maxDeadlift = 0;
+        maxSquat = 0;
+        maxBench = 0;
+    }
 
-    public void modifyProfile(user profile, String firstName, String lastName, String phoneNumber, String email, String gender,
-                              int birthdayYear, int birthdayMonth, int birthdayDay){
-    profile.setFirstName(firstName);
-    profile.setLastName(lastName);
-    profile.setPhoneNumber(phoneNumber);
-    profile.setGender(gender);
-    profile.setEmail(email);
-    profile.setBirthdayYear(birthdayYear);
-    profile.setBirthdayMonth(birthdayMonth);
-    profile.setBirthdayDay(birthdayDay);
+    powerlifter(String thousandPoundClub, String doesCompete, int maxBench, int maxDeadlift, int maxSquat, String Natty){
+        this.Natty = Natty;
+        this.doesCompete = doesCompete;
+        this.thousandPoundClub = thousandPoundClub;
+        this.maxBench = maxBench;
+        this.maxSquat = maxSquat;
+        this.maxDeadlift = maxDeadlift;
+    }
+}
+
+public class bodybuilder implements user {
+
+    String bulkOrCut;
+    String doesCompete;
+    String Natty;
+    String stageWeight;
+    String CurrWeight;
+
+    public String firstName ="NA", lastName = "NA";
+    public String  phoneNumber = "000-000-0000"; //most convenient data type IMO if you're wondering
+    public String email = "example@gmail.com";
+    public String gender = "Male";
+    public int birthdayYear = 0000, birthdayMonth =00, birthdayDay= 00;
+
+
+    void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
+                  String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay){
+        this.firstName = userFirstName;
+        this.lastName = userLastName;
+        this.phoneNumber = userPhoneNumber;
+        this.email = userEmail;
+        this.gender = userGender;
+        this.birthdayYear = userBirthdayYear;
+        this.birthdayMonth = userBirthdayMonth;
+        this.birthdayDay = userBirthdayDay;
+    }
+    
+    public void workoutRoutine(){
+        System.out.println("I am ready to compete? " + doesCompete);
+        System.out.println("Am I using Anabolics? " + Natty);
+        System.out.println("I am current in a " + bulkOrCut);
+        System.out.println("I am currently " + CurrWeight);
+        System.out.println("I want to walk on stage at" + stageWeight);
+    }
+
+    bodybuilder(){
+        bulkOrCut = "";
+        doesCompete = "";
+        stageWeight = "";
+        CurrWeight = "";
+        Natty = "";
+    }
+
+    bodybuilder(String bulkOrCut, String doesCompete, String stageWeight, String CurrWeight, String Natty){
+        this.bulkOrCut = bulkOrCut;
+        this.Natty = Natty;
+        this.stageWeight = stageWeight;
+        this.doesCompete = doesCompete;
+        this.CurrWeight = CurrWeight;
 
     }
-    //this currently sets all of the users info whenever they want to change any detail about their profile. we may want to make it more modular later so
-    //we use less processing power on changing data
-
 }
 
