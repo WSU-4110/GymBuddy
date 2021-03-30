@@ -117,7 +117,7 @@ public class bodybuilder implements user {
     String doesCompete;
     String Natty;
     float stageWeight;
-    String CurrWeight;
+    float CurrWeight;
 
     public String firstName ="NA", lastName = "NA";
     public String  phoneNumber = "000-000-0000"; //most convenient data type IMO if you're wondering
@@ -150,11 +150,11 @@ public class bodybuilder implements user {
         bulkOrCut = "";
         doesCompete = "";
         stageWeight = 0;
-        CurrWeight = "";
+        CurrWeight = 0;
         Natty = "";
     }
 
-    bodybuilder(String bulkOrCut, String doesCompete, float stageWeight, String CurrWeight, String Natty){
+    bodybuilder(String bulkOrCut, String doesCompete, float stageWeight, float CurrWeight, String Natty){
         this.bulkOrCut = bulkOrCut;
         this.Natty = Natty;
         this.stageWeight = stageWeight;
