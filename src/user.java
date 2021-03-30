@@ -1,7 +1,8 @@
 public interface user {
 
     void workoutRoutine();
-    void userInfo();
+    void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
+                  String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay);
 }
 
 
@@ -11,14 +12,14 @@ public class runner implements user {
     String inOrOut;
     String distanceOrSprint;
     float distance;
-
-
+    
+    
     public String firstName ="NA", lastName = "NA";
     public String  phoneNumber = "000-000-0000"; //most convenient data type IMO if you're wondering
     public String email = "example@gmail.com";
     public String gender = "Male";
     public int birthdayYear = 0000, birthdayMonth =00, birthdayDay= 00;
-    
+
 
     public void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
                    String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay){
@@ -31,7 +32,7 @@ public class runner implements user {
         this.birthdayMonth = userBirthdayMonth;
         this.birthdayDay = userBirthdayDay;
     }
-    
+
     public void workoutRoutine(){
         System.out.println("I am ready to compete? " + doesCompete);
         System.out.println("Do I prefer to run indoors or outdoors? " + inOrOut);
@@ -51,7 +52,7 @@ public class runner implements user {
         this.inOrOut = inOrOut;
         this.distanceOrSprint = distanceOrSprint;
         this.distance = distance;
-        
+
     }
 }
 
@@ -70,7 +71,7 @@ public class powerlifter implements user {
     public int birthdayYear = 0000, birthdayMonth =00, birthdayDay= 00;
 
 
-    void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
+    public void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
                   String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay){
         this.firstName = userFirstName;
         this.lastName = userLastName;
@@ -81,7 +82,7 @@ public class powerlifter implements user {
         this.birthdayMonth = userBirthdayMonth;
         this.birthdayDay = userBirthdayDay;
     }
-    
+
     public void workoutRoutine(){
         System.out.println("I am ready to compete? " + doesCompete);
         System.out.println("Am I using Anabolics? " + Natty);
@@ -125,7 +126,7 @@ public class bodybuilder implements user {
     public int birthdayYear = 0000, birthdayMonth =00, birthdayDay= 00;
 
 
-    void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
+    public void userInfo(String userFirstName, String userLastName, String userPhoneNumber, String userEmail,
                   String userGender, int userBirthdayYear, int userBirthdayMonth, int userBirthdayDay){
         this.firstName = userFirstName;
         this.lastName = userLastName;
@@ -136,7 +137,7 @@ public class bodybuilder implements user {
         this.birthdayMonth = userBirthdayMonth;
         this.birthdayDay = userBirthdayDay;
     }
-    
+
     public void workoutRoutine(){
         System.out.println("I am ready to compete? " + doesCompete);
         System.out.println("Am I using Anabolics? " + Natty);
