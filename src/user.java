@@ -12,8 +12,8 @@ public class runner implements user {
     String inOrOut;
     String distanceOrSprint;
     float distance;
-    
-    
+
+
     public String firstName ="NA", lastName = "NA";
     public String  phoneNumber = "000-000-0000"; //most convenient data type IMO if you're wondering
     public String email = "example@gmail.com";
@@ -116,7 +116,7 @@ public class bodybuilder implements user {
     String bulkOrCut;
     String doesCompete;
     String Natty;
-    String stageWeight;
+    float stageWeight;
     String CurrWeight;
 
     public String firstName ="NA", lastName = "NA";
@@ -149,12 +149,12 @@ public class bodybuilder implements user {
     bodybuilder(){
         bulkOrCut = "";
         doesCompete = "";
-        stageWeight = "";
+        stageWeight = 0;
         CurrWeight = "";
         Natty = "";
     }
 
-    bodybuilder(String bulkOrCut, String doesCompete, String stageWeight, String CurrWeight, String Natty){
+    bodybuilder(String bulkOrCut, String doesCompete, float stageWeight, String CurrWeight, String Natty){
         this.bulkOrCut = bulkOrCut;
         this.Natty = Natty;
         this.stageWeight = stageWeight;
@@ -163,4 +163,3 @@ public class bodybuilder implements user {
 
     }
 }
-
