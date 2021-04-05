@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "323720207677",
+    "project_id": "gymbuddy-68ca2",
+    "storage_bucket": "gymbuddy-68ca2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323720207677:android:5654932e6d04349b89f954",
+        "android_client_info": {
+          "package_name": "com.company.gymbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323720207677-uu9ouaaelmcr0d3s3igl799oubvgpcqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhDHvrw2t93P5eYE_1bf8iYIge6ghoxM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323720207677-uu9ouaaelmcr0d3s3igl799oubvgpcqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323720207677:android:298203eb4739e88b89f954",
+        "android_client_info": {
+          "package_name": "com.example.gymbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323720207677-uu9ouaaelmcr0d3s3igl799oubvgpcqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhDHvrw2t93P5eYE_1bf8iYIge6ghoxM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323720207677-uu9ouaaelmcr0d3s3igl799oubvgpcqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
