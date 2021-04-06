@@ -160,8 +160,6 @@ protected void setBirthdayDay(int birthdayDay){
 }
 /*
 GET FUNCTIONS FOR ALL THE NOT COMMENTED FIELDS
-
-
  */
 public String getFirstName(){
     return firstName;
