@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173519738841",
+    "project_id": "gymbuddy-6a5c6",
+    "storage_bucket": "gymbuddy-6a5c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173519738841:android:f2980e5a129bf7b0676bc8",
+        "android_client_info": {
+          "package_name": "com.company.authenticatorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173519738841-oa88bttrqk810e0r3umqam7dmieco0on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWPAig6FYRWGWqb-djwRxFrcKL9los3Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173519738841-oa88bttrqk810e0r3umqam7dmieco0on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
