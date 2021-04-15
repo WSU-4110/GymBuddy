@@ -1,0 +1,14 @@
+April 4, 2021
+
+Gym Buddy
+
+	We came together today to reevaluate our plans to move our application from just Java to Android Studio to implement the addition of Firebase. 
+  We continue to split up and divide the work among the group. We bring up many possible complications with this switch as we are not experienced in android studio, it may not merge well, and this will technically start from scratch. 
+  As a group we agree this is the best-case scenario for us.
+	After we work on what is missing from our GitHub and proposes solutions on when to work on each piece in between our coding work and create timelines as to when things should be finished.
+
+Kyle – Converting base app over to Android Studio and integrating firebase.
+Maher – Worked with the login page for the new project 
+Ragib – backup, and researching more integration with firebase and android studio
+Kevin – converting message system for the new application
+Bashar – working on the matching algorithm for the new application
