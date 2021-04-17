@@ -82,6 +82,7 @@ public void setRoutine(String routine){
 SET FUNCTIONS FOR ALL THE NOT COMMENTED FIELDS
 
  */
+
 protected void setFirstName(String firstName){
     if(firstName != null && firstName.length() >= 2) {
         this.firstName = firstName;
@@ -250,6 +251,7 @@ public void displayUser(user profile){
     }
     //this currently sets all of the users info whenever they want to change any detail about their profile. we may want to make it more modular later so
     //we use less processing power on changing data
+
 
 }
 
