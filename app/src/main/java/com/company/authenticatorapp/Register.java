@@ -16,6 +16,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class Register extends AppCompatActivity {
     EditText mFullname, mEmail, mPassword, mPhone;
@@ -36,6 +41,10 @@ public class Register extends AppCompatActivity {
         mPhone = findViewById(R.id.phone);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.createText);
+
+
+        FirebaseAuth auth;
+        auth = FirebaseAuth.getInstance();
 
         fAuth = FirebaseAuth.getInstance();
         //progressBar = findViewById(R.id.progressBar);
@@ -66,11 +75,38 @@ public class Register extends AppCompatActivity {
             //progressBar.setVisibility(View.VISIBLE);
 
 
+
+
                 //register the user
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    DatabaseReference reference;
+
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
+
+                                FirebaseUser firebaseUser = auth.getCurrentUser();
+                                String userid = firebaseUser.getUid();
+
+                                reference = FirebaseDatabase.getInstance().getReference("Users").child(userid);
+
+                                HashMap<String, String> hashMap = new HashMap<>();
+                                hashMap.put("id", userid);
+                                hashMap.put("imageURL", "default");
+                                hashMap.put("status", "offline");
+
+                                reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if (task.isSuccessful()){
+                                            Intent intent = new Intent(Register.this, MainActivity.class);
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    }
+                                });
+
                                 Toast.makeText(Register.this,
                                         "User Created", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
