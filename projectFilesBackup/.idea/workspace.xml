@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5563a20f-d516-42d2-9779-12c2348369e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/GymBuddy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GymBuddy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pX5sD4H022tPaIdFZF4VgrZLb3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RunManager" selected="JUnit.userTest.getBirthdayYear">
+    <configuration name="userTest.getBirthdayDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GymBuddy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="userTest" />
+      <option name="METHOD_NAME" value="getBirthdayDay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userTest.getBirthdayMonth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GymBuddy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="userTest" />
+      <option name="METHOD_NAME" value="getBirthdayMonth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userTest.getBirthdayYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GymBuddy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="userTest" />
+      <option name="METHOD_NAME" value="getBirthdayYear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userTest.getFirstNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GymBuddy" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="userTest" />
+      <option name="METHOD_NAME" value="getFirstNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userTest.getFirstNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GymBuddy" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="userTest" />
+      <option name="METHOD_NAME" value="getFirstNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userTest.getGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GymBuddy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="userTest" />
+      <option name="METHOD_NAME" value="getGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.userTest.getBirthdayYear" />
+        <item itemvalue="JUnit.userTest.getBirthdayMonth" />
+        <item itemvalue="JUnit.userTest.getGender" />
+        <item itemvalue="JUnit.userTest.getBirthdayDay" />
+        <item itemvalue="JUnit.userTest.getFirstNameTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5563a20f-d516-42d2-9779-12c2348369e6" name="Default Changelist" comment="" />
+      <created>1615316804077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615316804077</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="130" key="#PSD" timestamp="1618342316177">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="167" y="130" key="#PSD/0.23.1280.777@0.23.1280.777" timestamp="1618342316177" />
+    <state width="1168" height="217" key="GridCell.Tab.0.bottom" timestamp="1618687956946">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1168" height="217" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1618687956946" />
+    <state width="1168" height="217" key="GridCell.Tab.0.center" timestamp="1618687956945">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1168" height="217" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1618687956945" />
+    <state width="1168" height="217" key="GridCell.Tab.0.left" timestamp="1618687956944">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1168" height="217" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1618687956944" />
+    <state width="1168" height="217" key="GridCell.Tab.0.right" timestamp="1618687956945">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1168" height="217" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1618687956945" />
+    <state x="107" y="23" key="SettingsEditor" timestamp="1618624018104">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="107" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1618624018104" />
+    <state x="331" y="301" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618623142036">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="331" y="301" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1280.777@0.23.1280.777" timestamp="1618623142036" />
+    <state x="20" y="24" key="new project wizard" timestamp="1615318698585">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="20" y="24" key="new project wizard/0.23.1280.777@0.23.1280.777" timestamp="1615318698585" />
+    <state x="284" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1618623353562">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="284" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1618623353562" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest_getGender.ic" NAME="userTest.getGender Coverage Results" MODIFIED="1618625955854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest_getFirstNameTest.ic" NAME="userTest.getFirstNameTest Coverage Results" MODIFIED="1618625908007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest_getBirthdayDay.ic" NAME="userTest.getBirthdayDay Coverage Results" MODIFIED="1618625941438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest_getBirthdayMonth.ic" NAME="userTest.getBirthdayMonth Coverage Results" MODIFIED="1618626000709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest_getBirthdayYear.ic" NAME="userTest.getBirthdayYear Coverage Results" MODIFIED="1618626054221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest.ic" NAME="userTest Coverage Results" MODIFIED="1618625674396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$Main.ic" NAME="Main Coverage Results" MODIFIED="1618622941093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$user.ic" NAME="user Coverage Results" MODIFIED="1618623440365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GymBuddy$userTest_getPhoneNumber.ic" NAME="userTest.getPhoneNumber Coverage Results" MODIFIED="1618625712693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
