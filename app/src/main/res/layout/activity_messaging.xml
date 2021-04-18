@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Messaging">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="126dp"
+        app:srcCompat="@android:drawable/sym_action_chat"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="47dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
