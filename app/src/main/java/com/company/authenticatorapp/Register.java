@@ -60,6 +60,7 @@ public class Register extends AppCompatActivity {
             public void onClick(View v){
             String email = mEmail.getText().toString().trim();
             String password = mPassword.getText().toString().trim();
+            String name = mFullname.getText().toString().trim();
 
             if(TextUtils.isEmpty(email)){
                 mEmail.setError("Email is Required");
@@ -92,7 +93,7 @@ public class Register extends AppCompatActivity {
 
                                 HashMap<String, String> hashMap = new HashMap<>();
                                 hashMap.put("id", userid);
-                                hashMap.put("imageURL", "default");
+                                hashMap.put("Name", name);
                                 hashMap.put("status", "offline");
 
                                 reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
