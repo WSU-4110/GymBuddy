@@ -10,6 +10,7 @@ The repository contains several files. Most are written in Java and some impleme
 
 ### A list of functionalities of the application:
 * Sign in & Registration
+* Find a partner 
 * Update your preferences
 * Swipe left (refuse) or right (accept) on a list of users with similar interests
 * Messaging
