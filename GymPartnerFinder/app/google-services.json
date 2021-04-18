@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942268398053",
+    "project_id": "gympartnetfi",
+    "storage_bucket": "gympartnetfi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942268398053:android:a1b802fbd92888612d570c",
+        "android_client_info": {
+          "package_name": "com.example.gympartnerfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942268398053-f0v0spspruhla3d1vboi7u0mkj6d37v6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkkQc43zx8b1b7FLGr9kQp1eKS0iXZtBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942268398053-f0v0spspruhla3d1vboi7u0mkj6d37v6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
