@@ -21,4 +21,10 @@ public class MainActivity extends AppCompatActivity{
         startActivity(new Intent(getApplicationContext(),LogIn.class));
         finish();
     }
+
+    public void preferences(View view){
+
+        startActivity(new Intent(getApplicationContext(),userPreferences.class));
+        finish();
+    }
 }

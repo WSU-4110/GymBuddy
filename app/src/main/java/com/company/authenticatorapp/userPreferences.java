@@ -44,14 +44,14 @@ public class userPreferences extends AppCompatActivity implements AdapterView.On
 
         String userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
 
-        database = FirebaseDatabase.getInstance().getReference().child(Update.users).child(userID);
+        database = FirebaseDatabase.getInstance().getReference().child(Data.Update.users).child(userID);
 
         //getting the info back
         getUserInfo();
 
         //creating the spinner menu for gender
         dropdownSpinner = findViewById(R.id.setGender);
-        String[] str = new String[]{Update.male, Update.female};
+        String[] str = new String[]{Data.Update.male, Data.Update.female};
         adaptSpinner = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, str);
         dropdownSpinner.setAdapter(adaptSpinner);
         dropdownSpinner.setOnItemSelectedListener(this);
@@ -76,15 +76,15 @@ public class userPreferences extends AppCompatActivity implements AdapterView.On
                     Map<String, Object> uInfo = (Map<String, Object>) dataSnapshot.getValue();
 
                     assert uInfo != null;
-                    if(uInfo.get(Update.fname) != null) {
-                        fullName.setText(Objects.requireNonNull(uInfo.get(Update.fname)).toString());
+                    if(uInfo.get(Data.Update.fname) != null) {
+                        fullName.setText(Objects.requireNonNull(uInfo.get(Data.Update.fname)).toString());
                     }
-                    if(uInfo.get(Update.user_gender) != null) {
-                        int spinnerPosition = adaptSpinner.getPosition(Objects.requireNonNull(uInfo.get(Update.user_gender)).toString());
+                    if(uInfo.get(Data.Update.user_gender) != null) {
+                        int spinnerPosition = adaptSpinner.getPosition(Objects.requireNonNull(uInfo.get(Data.Update.user_gender)).toString());
                         dropdownSpinner.setSelection(spinnerPosition);
                     }
-                    if(uInfo.get(Update.user_aboutMe) != null) {
-                        aboutMe.setText(Objects.requireNonNull(uInfo.get(Update.user_aboutMe)).toString());
+                    if(uInfo.get(Data.Update.user_aboutMe) != null) {
+                        aboutMe.setText(Objects.requireNonNull(uInfo.get(Data.Update.user_aboutMe)).toString());
                     }
                 }
             }
@@ -100,9 +100,9 @@ public class userPreferences extends AppCompatActivity implements AdapterView.On
         String gender1 = gender;
 
         Map<String, Object> uInfo = new HashMap<String, Object>();
-        uInfo.put(Update.fname, name);
-        uInfo.put(Update.user_gender, gender1);
-        uInfo.put(Update.user_aboutMe, information);
+        uInfo.put(Data.Update.fname, name);
+        uInfo.put(Data.Update.user_gender, gender1);
+        uInfo.put(Data.Update.user_aboutMe, information);
 
         database.updateChildren(uInfo);
     }
@@ -117,10 +117,10 @@ public class userPreferences extends AppCompatActivity implements AdapterView.On
         switch(position)
         {
             case 0:
-                gender = Update.male;
+                gender = Data.Update.male;
                 break;
             case 1:
-                gender = Update.female;
+                gender = Data.Update.female;
                 break;
         }
     }
