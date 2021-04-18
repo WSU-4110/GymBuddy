@@ -14,7 +14,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 public class MainActivity extends AppCompatActivity{
+
+    public static final String APP_NAME = "Gym Buddy";
 
     private Button button;
 
