@@ -8,14 +8,21 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button PrefButton = (Button) findViewById(R.id.button2);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if(user != null){
+            setContentView(R.layout.activity_main);
+            Button PrefButton = (Button) findViewById(R.id.button2);
+        }
+        else{
+            setContentView(R.layout.activity_log_in);
+        }
     }
 
     public void logout(View view){
@@ -25,7 +32,7 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void preferences(View view){
-        FirebaseAuth fAuth;
+        setContentView(R.layout.activity_user_preferences);
         startActivity(new Intent(MainActivity.this,userPreferences.class));
         finish();
     }
