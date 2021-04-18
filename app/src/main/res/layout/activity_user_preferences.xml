@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+    tools:context="com.company.authenticatorapp.userPreferences>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_above="@id/submitbtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_marginEnd="5dp"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/setName"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="@android:color/holo_orange_light"
+                android:autofillHints="@string/name"
+                android:inputType="textPersonName"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_marginEnd="5dp"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/setGender"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/setAboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="start"
+            android:background="@null"
+            android:textColor="@android:color/holo_orange_light"
+            android:hint="@string/about_me"
+            android:autofillHints=""
+            android:inputType="textShortMessage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btsubmit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</RelativeLayout>
