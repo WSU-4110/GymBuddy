@@ -19,20 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Matching extends AppCompatActivity{
 
     public void matching() {
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("gymbuddy-6a5c6/authentication/users");
+       DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
 
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Matching matching = snapshot.getValue(Matching.class);
-                System.out.println(matching);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                System.out.println("failed to read. Error ");
-            }
-        });
     }
 }

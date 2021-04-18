@@ -10,6 +10,9 @@ import android.widget.Button;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -22,7 +25,11 @@ public class MainActivity extends AppCompatActivity{
         if(user != null){
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
             System.out.println("main function" + uid); //delete this later. this calls the user id to the console for id pass through verification
-           // System.out.println("username: " + );
+            FirebaseDatabase reference = FirebaseDatabase.getInstance();
+            DatabaseReference myRef = reference.getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Name");
+
+           System.out.println("username: " + reference.getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Name"));
+
             setContentView(R.layout.activity_main);
             Button PrefButton = (Button) findViewById(R.id.button2);
             PrefButton.setOnClickListener(new View.OnClickListener() {
