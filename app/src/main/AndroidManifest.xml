@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AuthenticatorApp">
         <activity android:name=".LogIn"></activity>
+        <activity android:name=".userPreferences"></activity>
         <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
