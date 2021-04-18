@@ -13,8 +13,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity{
 
-    private Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,19 +33,6 @@ public class MainActivity extends AppCompatActivity{
         else{
             setContentView(R.layout.activity_log_in);
         }
-
-        button = (Button) findViewById(R.id.button3);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMessaging();
-            }
-        });
-    }
-
-    public void openMessaging(){
-        Intent intent = new Intent(this, Messaging.class);
-        startActivity(intent);
     }
 
     public void logout(View view){
