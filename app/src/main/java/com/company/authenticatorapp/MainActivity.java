@@ -17,8 +17,16 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user != null){
+            String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            System.out.println("main function" + uid); //delete this later. this calls the user id to the console for id pass through verification
             setContentView(R.layout.activity_main);
             Button PrefButton = (Button) findViewById(R.id.button2);
+            PrefButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    preferences();
+                }
+            });
         }
         else{
             setContentView(R.layout.activity_log_in);
@@ -31,9 +39,10 @@ public class MainActivity extends AppCompatActivity{
         finish();
     }
 
-    public void preferences(View view){
+    public void preferences(){
+        //Intent intent = new Intent(this, userPreferences.class);
         setContentView(R.layout.activity_user_preferences);
-        startActivity(new Intent(MainActivity.this,userPreferences.class));
-        finish();
+        startActivity(new Intent(this,userPreferences.class));
+        //finish();
     }
 }

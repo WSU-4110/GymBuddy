@@ -76,6 +76,8 @@ public class LogIn extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                         //   String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                         //   fAuth.getUid();
                             Toast.makeText(LogIn.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
 
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));

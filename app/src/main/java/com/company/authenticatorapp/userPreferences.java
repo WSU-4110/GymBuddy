@@ -44,6 +44,7 @@ public class userPreferences extends AppCompatActivity implements AdapterView.On
 
         String userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
 
+
         database = FirebaseDatabase.getInstance().getReference().child(Data.Update.users).child(userID);
 
         //getting the info back
