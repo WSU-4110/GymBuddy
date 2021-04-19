@@ -27,6 +27,9 @@ import java.util.Random;
 
 public class Matching extends AppCompatActivity{
 public DatabaseReference randomRef;
+
+    private Button button;
+
     public DatabaseReference userName(){
 
         FirebaseDatabase reference = FirebaseDatabase.getInstance();
@@ -54,7 +57,18 @@ public DatabaseReference randomRef;
         reference(userName() , textView);
         random(matchingName(), textView2);
 
+        button = (Button) findViewById(R.id.button5);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homeScreen();
+            }
+        });
+    }
 
+    public void homeScreen(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 public void reference(DatabaseReference myRef, TextView textView){
