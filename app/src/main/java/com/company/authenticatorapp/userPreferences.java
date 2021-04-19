@@ -30,6 +30,8 @@ public class userPreferences extends AppCompatActivity{
     private ArrayAdapter<String> adaptSpinner;
     private Spinner dropdownSpinner;
 
+    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +66,19 @@ public class userPreferences extends AppCompatActivity{
             }
         });
 
+        button = (Button) findViewById(R.id.button5);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homeScreen();
+            }
+        });
+
+    }
+
+    public void homeScreen(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     private void getUserInfo() {
