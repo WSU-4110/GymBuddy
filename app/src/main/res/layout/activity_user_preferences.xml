@@ -10,89 +10,47 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@android:color/holo_blue_dark"
-        android:layout_above="@id/submitbtn">
+        android:orientation="vertical">
 
-        <LinearLayout
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="128dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="8dp"
+            android:text="Back" />
+
+        <EditText
+            android:id="@+id/setName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20sp"
+            android:background="@null"
+            android:hint="Name" />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/name"
-                android:textColor="@android:color/holo_orange_light"
-                android:layout_marginEnd="5dp"
-                android:textSize="18sp"/>
-
-            <EditText
-                android:id="@+id/setName"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:textColor="@android:color/holo_orange_light"
-                android:autofillHints="@string/name"
-                android:inputType="textPersonName"
-                tools:ignore="LabelFor" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/setPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/gender"
-                android:textColor="@android:color/holo_orange_light"
-                android:layout_marginEnd="5dp"
-                android:textSize="18sp"/>
-
-            <Spinner
-                android:id="@+id/setGender"
-                android:textColor="@android:color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:spinnerMode="dropdown" />
-
-        </LinearLayout>
+            android:layout_marginBottom="20sp"
+            android:background="@null"
+            android:hint="Phone"
+            android:inputType="phone" />
 
         <EditText
             android:id="@+id/setAboutMe"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
-            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
             android:background="@null"
-            android:textColor="@android:color/holo_orange_light"
-            android:hint="@string/about_me"
-            android:autofillHints=""
-            android:inputType="textShortMessage" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/submitbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+            android:hint="About Me"
+            android:inputType="textLongMessage" />
 
         <Button
             android:id="@+id/btsubmit"
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="3dp"
-            android:background="@android:color/holo_orange_light"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:text="@string/submit" />
+            android:text="Submit" />
 
     </LinearLayout>
 
