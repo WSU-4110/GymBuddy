@@ -30,16 +30,15 @@ public DatabaseReference randomRef;
 
     private Button button;
 
-    public DatabaseReference userName(){
+    public DatabaseReference userName(){ // grabs the user id for the active user
 
         FirebaseDatabase reference = FirebaseDatabase.getInstance();
         DatabaseReference myRef = reference.getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid());
-        //String ID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
        return myRef;
     }
 
-    public DatabaseReference matchingName(){
-//O9vCI2bybBbFMxdmZv7paNh9vsF2
+    public DatabaseReference matchingName(){ //grabs a reference for a generic user token
         FirebaseDatabase reference = FirebaseDatabase.getInstance();
         DatabaseReference myRef = reference.getReference();
         return myRef;
@@ -66,12 +65,12 @@ public DatabaseReference randomRef;
         });
     }
 
-    public void homeScreen(){
+    public void homeScreen(){//function to have a back button
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
-public void reference(DatabaseReference myRef, TextView textView){
+public void reference(DatabaseReference myRef, TextView textView){//grabs the users name based on the user id key provided
     myRef.child("Name").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
         @Override
         public void onComplete(@NonNull Task<DataSnapshot> task) {
@@ -82,29 +81,26 @@ public void reference(DatabaseReference myRef, TextView textView){
 
     });
 }
-public void random(DatabaseReference myRef, TextView textView){
+public void random(DatabaseReference myRef, TextView textView){//generates a random user id
     FirebaseDatabase reference = FirebaseDatabase.getInstance();
     myRef.child("Users/").addListenerForSingleValueEvent(new ValueEventListener() {
         @Override
         public void onDataChange(@NonNull DataSnapshot snapshot) {
             Random random;
-            ArrayList list = new ArrayList<String>();
+            ArrayList list = new ArrayList<String>();// references all objects in the database as a list
             for(DataSnapshot arr: snapshot.getChildren()){
-                String s1 = arr.toString().substring(arr.toString().indexOf("=")+1);
+                String s1 = arr.toString().substring(arr.toString().indexOf("=")+1);// this returns only the child function we need to get the user id
                 s1 = s1.split(",")[0];
                 s1 = s1.replaceAll(" ", "");
                 list.add(s1);
             }
             random = new Random();
-            // String key = new String(String.valueOf(list.get(0)));
             String[] array = new String[list.size()];
             int index = 0;
             for(Object Value: list){
                 array[index] = (String) Value;
-                System.out.println(array[index]);
                 index++;
             }
-            System.out.println("line 90");
             String key = array[(int)Math.floor(Math.random()*(array.length))];
             randomRef = reference.getReference("Users/" + key);
             while(randomRef == userName()){
@@ -117,7 +113,7 @@ public void random(DatabaseReference myRef, TextView textView){
 
         @Override
         public void onCancelled(@NonNull DatabaseError error) {
-
+            System.out.println("error");
         }
     });
 }
