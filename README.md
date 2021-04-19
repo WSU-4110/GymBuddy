@@ -26,7 +26,7 @@ The repository contains several files. Most are written in Java and some impleme
 
 
 
-#Installation.MD
+Installation.MD
 
 To run the application, download the files in the main branch. It is not yet published and deployable on a smart phone but you can run it on an emulator. Since some features are implemented using Firebase, we highly recommend using Android Studio's emulator to run the application.
 
