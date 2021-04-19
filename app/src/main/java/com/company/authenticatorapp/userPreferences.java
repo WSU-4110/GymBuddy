@@ -1,5 +1,6 @@
 package com.company.authenticatorapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -112,7 +113,7 @@ public class userPreferences extends AppCompatActivity{
         uInfo.put("aboutme", information);
 
         database.updateChildren(uInfo);
-
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
         finish();
     }
 }
