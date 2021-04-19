@@ -93,6 +93,11 @@ public void random(DatabaseReference myRef, TextView textView){
             System.out.println("line 90");
             String key = array[(int)Math.floor(Math.random()*(array.length))];
             randomRef = reference.getReference("Users/" + key);
+            while(randomRef == userName()){
+                key = "";
+                key = array[random.nextInt(array.length)];
+                randomRef = reference.getReference("Users/" + key);
+            }
            reference(randomRef, textView);
         }
 
