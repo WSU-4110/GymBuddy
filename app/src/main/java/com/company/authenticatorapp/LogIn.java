@@ -1,9 +1,7 @@
 package com.company.authenticatorapp;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +12,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -24,7 +21,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LogIn extends AppCompatActivity {
-
     EditText mEmail, mPassword;
     Button mLoginBtn;
     TextView mCreateBtn, forgotTextLink;
@@ -40,7 +36,7 @@ public class LogIn extends AppCompatActivity {
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.password);
         progressBar = findViewById(R.id.progressBar);
-       fAuth = FirebaseAuth.getInstance();
+        fAuth = FirebaseAuth.getInstance();
         mLoginBtn = findViewById(R.id.loginBtn);
         mCreateBtn = findViewById(R.id.createText);
         forgotTextLink = findViewById(R.id.forgotPassword);
@@ -48,7 +44,6 @@ public class LogIn extends AppCompatActivity {
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
@@ -79,18 +74,17 @@ public class LogIn extends AppCompatActivity {
                          //   String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
                          //   fAuth.getUid();
                             Toast.makeText(LogIn.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        } else {
+                        } 
+                        else {
                             Toast.makeText(LogIn.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                         }
-
                     }
                 });
-
             };
         });
+        
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,6 +114,7 @@ public class LogIn extends AppCompatActivity {
                                 Toast.makeText(LogIn.this, "Reset Link Sent To Your Email.", Toast.LENGTH_SHORT).show();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
+                            
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(LogIn.this, "Error ! Reset Link is Not Sent" + e.getMessage(), Toast.LENGTH_SHORT).show();
