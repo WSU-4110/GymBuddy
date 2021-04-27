@@ -1,0 +1,5 @@
+﻿firstname,lastname,password,phonenumber,email,gender,birthdayyear,birthdaymonth,birthdayday
+admin,admin,password123,0,admin,admin,0,0,0
+joe,scmoe,password,2225471410,joe@mail.com,male,2020,12,25,
+zack,whack,password123,2224445555,zack@gmail.com,male,2000,12,10,
+kyle,carr,password123,123456789,kyle@gmail.com,male,2020,12,1,
