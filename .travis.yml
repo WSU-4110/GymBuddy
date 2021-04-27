@@ -1,4 +1,4 @@
 language: java
-script: gradle assemble
+script: gradle build
 jdk:
   - openjdk8
