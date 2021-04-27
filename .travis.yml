@@ -1,4 +1,4 @@
 language: java
-script: ant main
+script: ./gradlew build
 jdk:
   - openjdk8
