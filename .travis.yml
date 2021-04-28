@@ -1,6 +1,7 @@
 language: java
 script: gradle build
 script: gradle test
-git update-index --chmod=+x gradlew
+before_install:
+ – chmod +x gradlew
 jdk:
   - openjdk8
