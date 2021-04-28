@@ -1,0 +1,6 @@
+language: java
+
+script: gradle build
+script: gradle test
+jdk:
+  - openjdk8
