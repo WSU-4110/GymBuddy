@@ -1,6 +1,6 @@
 language: java
+
+script: gradle build
+
 jdk:
   - openjdk8
-script: gradle build
-        java GymTest.java
-
