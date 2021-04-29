@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="bodybuilderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-28T22:39:29" hostname="Kyles-Thinkpad" time="0.003">
+<testsuite name="bodybuilderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-29T14:38:52" hostname="Kyles-Thinkpad" time="0.003">
   <properties/>
   <testcase name="getCurrWeight" classname="bodybuilderTest" time="0.002"/>
   <testcase name="getDoesCompete" classname="bodybuilderTest" time="0.0"/>
