@@ -45,4 +45,40 @@ public class userTest {
         me.setBirthdayYear(1993);
         assertEquals(1993, me.getBirthdayYear());
     }
+    @Test
+    public void testModify(){
+        user user1 = new user("first","last","111111111","user@gmail.com",
+                "male",2000,01,01);
+        assertEquals("111111111", user1.phoneNumber,"111111111");
+    }
+
+    @Test
+    public void displayTest(){
+        user user1 = new user("first","last","111111111","user@gmail.com",
+                "male",2000,01,01);
+        assertEquals("last", user1.lastName,"last");
+    }
+
+    @Test
+    public void setFirstNameTest(){
+        user user1 = new user();
+        user1.setFirstName("firstName");
+        assertEquals("firstName", user1.firstName,"firstName");
+    }
+
+    @Test
+    public void setLasttNameTest(){
+        user user1 = new user();
+        user1.setLastName("lastname");
+        assertEquals("lastName", user1.lastName,"lastname");
+    }
+
+    @Test
+    public void setNumberTest(){
+        user user1 = new user();
+        user1.setPhoneNumber("000-000-0000");
+        assertEquals("000-000-0000", user1.phoneNumber,"000-000-0000");
+    }
 }
+
+

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="userTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-29T14:38:52" hostname="Kyles-Thinkpad" time="0.002">
+<testsuite name="userTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-04-29T17:37:03" hostname="Kyles-Thinkpad" time="0.004">
   <properties/>
-  <testcase name="getPhoneNumber" classname="userTest" time="0.001"/>
+  <testcase name="getPhoneNumber" classname="userTest" time="0.003"/>
   <testcase name="getFirstNameTest" classname="userTest" time="0.0"/>
   <testcase name="getBirthdayMonth" classname="userTest" time="0.0"/>
   <testcase name="getBirthdayYear" classname="userTest" time="0.0"/>
+  <testcase name="setNumberTest" classname="userTest" time="0.0"/>
+  <testcase name="setLasttNameTest" classname="userTest" time="0.0"/>
   <testcase name="getGender" classname="userTest" time="0.0"/>
-  <testcase name="getBirthdayDay" classname="userTest" time="0.001"/>
+  <testcase name="setFirstNameTest" classname="userTest" time="0.0"/>
+  <testcase name="getBirthdayDay" classname="userTest" time="0.0"/>
+  <testcase name="testModify" classname="userTest" time="0.0"/>
+  <testcase name="displayTest" classname="userTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

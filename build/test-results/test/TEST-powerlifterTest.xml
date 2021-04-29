@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="powerlifterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-29T14:38:52" hostname="Kyles-Thinkpad" time="0.003">
+<testsuite name="powerlifterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-29T17:37:03" hostname="Kyles-Thinkpad" time="0.002">
   <properties/>
-  <testcase name="getMaxBench" classname="powerlifterTest" time="0.002"/>
+  <testcase name="getMaxBench" classname="powerlifterTest" time="0.001"/>
   <testcase name="getMaxSquat" classname="powerlifterTest" time="0.0"/>
   <testcase name="getDoesCompete" classname="powerlifterTest" time="0.0"/>
   <testcase name="getMaxDeadlift" classname="powerlifterTest" time="0.0"/>
   <testcase name="getNatty" classname="powerlifterTest" time="0.0"/>
-  <testcase name="getThousandPoundClub" classname="powerlifterTest" time="0.001"/>
+  <testcase name="getThousandPoundClub" classname="powerlifterTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

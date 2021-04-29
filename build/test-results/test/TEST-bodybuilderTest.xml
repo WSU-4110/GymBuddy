@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="bodybuilderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-29T14:38:52" hostname="Kyles-Thinkpad" time="0.003">
+<testsuite name="bodybuilderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-29T17:37:03" hostname="Kyles-Thinkpad" time="0.003">
   <properties/>
-  <testcase name="getCurrWeight" classname="bodybuilderTest" time="0.002"/>
+  <testcase name="getCurrWeight" classname="bodybuilderTest" time="0.001"/>
   <testcase name="getDoesCompete" classname="bodybuilderTest" time="0.0"/>
   <testcase name="getStageWeight" classname="bodybuilderTest" time="0.0"/>
   <testcase name="getBulkOrCut" classname="bodybuilderTest" time="0.0"/>
-  <testcase name="getNatty" classname="bodybuilderTest" time="0.0"/>
+  <testcase name="getNatty" classname="bodybuilderTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

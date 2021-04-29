@@ -1,8 +1,11 @@
-import org.junit.jupiter.api.Test;
+
 
 import java.util.Scanner;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class Gym {
 
@@ -129,7 +132,7 @@ Allows the user to swipe right or left on another user's profile
 
         }
 
-    public class testSwiping(){
+    public class testSwiping {
         @Test
         public void test_Swiping_Method(){
 Gym user1 = new Gym("maher","dearborn","Push/Pull/Legs",21,
