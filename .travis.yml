@@ -1,4 +1,7 @@
 language: java
-script: ant main
+script: gradle build
+script: gradle test
+before_install:
+ – chmod +x gradlew
 jdk:
-  - oraclejdk8
+  - openjdk8
