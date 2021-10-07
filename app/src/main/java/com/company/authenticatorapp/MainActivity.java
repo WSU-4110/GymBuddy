@@ -1,3 +1,5 @@
+/* Adding copyright*/
+
 package com.company.authenticatorapp;
 
 import androidx.annotation.NonNull;
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity{
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user != null){
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
-           // System.out.println("main function" + uid); //delete this later. this calls the user id to the console for id pass through verification
+           
 
 
             setContentView(R.layout.activity_main);
